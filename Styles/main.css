@@ -184,3 +184,36 @@ a:visited{
     cursor: pointer;
   }
 
+
+
+.containerpop {
+    width: 20vw;
+    height: 10vh;
+    background: transparent;
+    position: relative;
+  }
+  
+  #popup {
+    position: absolute;
+    top: 450%;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 110px;
+    color: white;
+    border-radius: 30px;
+    background: rgb(133, 73, 73);
+    opacity: 0;
+    animation: popup .10s 5s ease backwards
+  }
+  @keyframes popup {
+   from {opacity: 1; }
+   to{opacity: 0; }
+  }
+
+
+
+  
