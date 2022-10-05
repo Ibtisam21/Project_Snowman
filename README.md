@@ -18,6 +18,7 @@ As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
   - Javascript 
 
 # Live Site
+(http://127.0.0.1:5500/index.html)
 
 # Author 
 Author: Ibtisam Ali
