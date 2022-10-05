@@ -12,7 +12,10 @@ As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
 4. Letters Already Guessed: (Letters the user has guessed will be Fade out).
 5. After the user wins or lost a modal Pop-ups to show either you won or lost.
 
-
+# Languages used
+  - Dom Manipulation 
+  - Javascript 
+  - 
 # Live Site
 
 # Author 
