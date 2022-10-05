@@ -12,7 +12,7 @@ As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
 4. Letters Already Guessed: (Letters the user has guessed will be Fade out).
 5. After the user wins or lost a modal Pop-ups to show either user won or lost.
 
-# Languages used
+# Tech used
   - Dom Manipulation 
   - Javascript 
 
@@ -22,10 +22,12 @@ As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
 Author: Ibtisam Ali
 
 # Sources
-  - Stackover Flow
+  - StackoverFlow
   - Greeks For Greeks
   - Quora
- 
+  
+ # WireFrames
+
 
 # Status and Development Documentation
 The status of this project is complete. For documentation feel free to look at the comments within all of the source code to understand coding implementation
