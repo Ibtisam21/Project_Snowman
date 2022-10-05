@@ -5,8 +5,9 @@ Snowman is a guessing game for two or more players. One player thinks of a word,
 In this game User will be playing with computer and a guess word will be provided to guess it according to that hint.
 
 Display the following on the page:
-1. Press any key to get started!
-2. If the word is Strawberry, display it like this when the game starts: _ _ _ _ _ _ _.
+1. Press Start Button to get started!
+2. Instruction will be displayed while starting the game.
+3. If the word is Strawberry, display it like this when the game starts: _ _ _ _ _ _ _.
 As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
 3. Number of Guesses Remaining: (# of guesses remaining for the user).
 4. Letters Already Guessed: (Letters the user has guessed will be Fade out).
