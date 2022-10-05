@@ -1,16 +1,16 @@
 # App Name 
-Snowman
+Snowman AKA Hangman
 # App Description 
-Hangman is a guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses. Originally a Paper-and-pencil game, there are now electronic versions.
-In this game computer you will be playing with computer and a guess will be provided to guess the the word according to that hint.
+Snowman is a guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses. Originally a Paper-and-pencil game, there are now electronic versions.
+In this game You will be playing with computer and a guess word will be provided to guess it according to that hint.
 
-1. Display the following on the page:
-2. Press any key to get started!
-3. If the word is Strawberry, display it like this when the game starts: _ _ _ _ _ _ _.
+Display the following on the page:
+1. Press any key to get started!
+2. If the word is Strawberry, display it like this when the game starts: _ _ _ _ _ _ _.
 As the user guesses the correct letters, reveal them: S t r a _ _ e r r _.
-4. Number of Guesses Remaining: (# of guesses remaining for the user).
-5. Letters Already Guessed: (Letters the user has guessed will be Fade out).
-6. After the user wins or lost a modal Pop-ups to show either you won or lost.
+3. Number of Guesses Remaining: (# of guesses remaining for the user).
+4. Letters Already Guessed: (Letters the user has guessed will be Fade out).
+5. After the user wins or lost a modal Pop-ups to show either you won or lost.
 
 
 # Live Site
