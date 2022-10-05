@@ -344,19 +344,41 @@ function verifyChoosedLetter(letter){
 };
 
 function changeLetterStyle(key){
-    document.getElementById(key).style.background = "#622525";
+    document.getElementById(key).style.background = "transparent";
     document.getElementById(key).style.color = "#000000";
 }
 
 function comparelists(letter){
     const pos = secretWordSorted.indexOf(letter);
-    if(pos < 0){ //if the user make a mistake
+    if(pos < 0){
+         //if the user make a mistake
         tries--
+        document.getElementById('Lives').innerText = "Remaining Lives : " + tries
+
         loadImageHangman();
-        console.log("wrong word bhsdk")
+        // console.log("wrong word bhsdk")
         
         if(tries == 0){
-            window.alert("You Lost Boi!");
+            // Get the modal
+                const modal = document.getElementById("myModal");
+                    document.getElementById('NewTxt').innerText = "Correct word is : " + secretWordSorted
+                    
+                // Get the <span> element that closes the modal
+                const span = document.getElementsByClassName("close")[0];
+                modal.style.display = "block";
+                // modal("helooo bhsdk")
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                 modal.style.display = "none";
+}
+
+            // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+            }
+}
             // openModal("OHHHH you lost :(", "The secret word was: " + secretWordSorted + "<br> <br> Work on javascript so you get yourself better");
         }
 //if the user makes a hit
@@ -376,7 +398,29 @@ function comparelists(letter){
     }
 
     if(victory == true) {
-        window.alert("Congradulation bhsdk!");
+        // Get the modal
+        const modal = document.getElementById("myModal");
+        document.getElementById('ptag').innerText = "Now focus on javascript and make more projects";
+        document.getElementById("ptag").style.fontSize = "30"
+        document.getElementById('NewTxt').innerText = "Congratulation you won";
+        
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    // modal("helooo bhsdk")
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+     modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+}
+}
+        // window.alert("Congradulation bhsdk!");
         // openModal("Congratulations!", "You have discovered the upside down... watch out for the Snowman!");
         tries = 0;
     }
@@ -412,17 +456,7 @@ function loadImageHangman(){
             break;
     }
 };
-function openModal(title, message){
-    let modalTitle = document.getElementById("exampleModalLabel");
-    modalTitle.innerText = title;
 
-    let modalBody = document.getElementById("modalBody");
-    modalBody.innerHTML = message;
-
-    $("#myModal").modal({
-        show: true
-    });
-}
 let btnNewGame = document.querySelector("#btnNewGame");
 btnNewGame.addEventListener("click", function(){
     location.reload();
@@ -431,3 +465,4 @@ btnNewGame.addEventListener("click", function(){
 function refreshPage(){
     window.location.reload();
 }
+
